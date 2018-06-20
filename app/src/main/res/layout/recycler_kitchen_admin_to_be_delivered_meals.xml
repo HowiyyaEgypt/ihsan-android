@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="#f7f1e3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+            <ImageView
+                android:layout_marginBottom="8dp"
+                android:id="@+id/iv_meal_photo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/defaultmeal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_meal_donor_name"
+                    android:textSize="16sp"
+                    android:text="Donor name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_meal_location_description"
+                    android:textSize="16sp"
+                    android:text="Location desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_meal_location_added_on"
+                    android:textSize="16sp"
+                    android:text="Added on"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/iv_deliver_meal"
+                    android:layout_gravity="center"
+                    android:background="#ff5e57"
+                    android:src="@drawable/ic_directions_car"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/iv_deliver_meal_share"
+                    android:layout_gravity="center"
+                    android:background="#22a6b3"
+                    android:src="@drawable/ic_action_users"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+                <ImageView
+                    android:layout_marginRight="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:id="@+id/iv_notify_volunteers"
+                    android:layout_gravity="center"
+                    android:background="#0be881"
+                    android:src="@drawable/ic_notifications"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

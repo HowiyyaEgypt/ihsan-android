@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="16dp" android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_meal_donor_name"
+                    android:text="Doanted by: mm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_meal_deliverer_name"
+                    android:text="Delivered by: mm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_meal_stage"
+                    android:text="Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_meal_tracking_tools"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_confirm_reception"
+                    android:layout_margin="4dp"
+                    android:background="#5f27cd"
+                    android:textColor="#fff"
+                    android:padding="4dp"
+                    android:layout_width="130dp"
+                    android:gravity="center"
+                    android:text="Confirm reception"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_cancel_delivery"
+                    android:layout_margin="4dp"
+                    android:background="#EA2027"
+                    android:textColor="#fff"
+                    android:padding="4dp"
+                    android:gravity="center"
+                    android:text="Cancel delivery"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#f39c12"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Step 3: how the meal will be delivered?"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_delivery_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_deliver_meal_myself"
+            android:text="I will deliver it myself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_meal_picked_up"
+            android:text="I want someone to pick it from my location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_pick_location_hint"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f39c12"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Choose an old location or pick a new one"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#fff"
+        android:layout_marginTop="16dp"
+        android:id="@+id/rv_my_locations"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <fragment
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/map_draggable"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:text="Location description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_location_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/btn_save_new_location"
+            android:layout_gravity="bottom"
+            android:text="Add new location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

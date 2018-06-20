@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toolbarId="@+id/toolbar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="Total Donated Meals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_donated_meals_count"
+                            android:layout_marginTop="8dp"
+                            android:background="#fff"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:padding="8dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="Total Delivered Meals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_deliveries_count"
+                            android:layout_marginTop="8dp"
+                            android:background="#fff"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:padding="8dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:text="Total Opened Kitchens"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_kitchens_count"
+                            android:layout_marginTop="8dp"
+                            android:background="#fff"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="0"
+                            android:padding="8dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/rv_feed_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="There is recent activity"
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible" />
+
+</android.support.design.widget.CoordinatorLayout>

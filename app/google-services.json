@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "852426084399",
+    "firebase_url": "https://ihsan-1524932232557.firebaseio.com",
+    "project_id": "ihsan-1524932232557",
+    "storage_bucket": "ihsan-1524932232557.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852426084399:android:bc29e6b2ad19828b",
+        "android_client_info": {
+          "package_name": "com.example.mohamed.ihsan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852426084399-p19qvu71t3vjfhknc8n98s3upj0b9u88.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "852426084399-p19qvu71t3vjfhknc8n98s3upj0b9u88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbEukjXPSFdYJy2xqaV_fuBpEiA0RVqNQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

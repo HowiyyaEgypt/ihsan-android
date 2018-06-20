@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ihsan</string>
+    <string name="text_home">Home</string>
+    <string name="text_donate_meal">Donate meal</string>
+    <string name="text_donate_delivery">Donate delivery</string>
+    <string name="text_donate_money">Donate money</string>
+    <string name="text_profile">Profile</string>
+</resources>
